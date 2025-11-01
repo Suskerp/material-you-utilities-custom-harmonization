@@ -87,6 +87,7 @@ async function main() {
 						'base_color',
 						'card_type',
 						'css_file',
+						'json_file',
 						'appbar',
 						'appbar_title',
 						'navbar',

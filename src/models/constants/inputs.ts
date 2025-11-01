@@ -10,6 +10,7 @@ import {
 	setTheme,
 	showAppbarTitle,
 } from '../../utils/handlers';
+import { setCustomColorsFromJson } from '../../utils/handlers/json';
 import { IInputInfo, InputDomain, InputField } from '../interfaces/Input';
 import { schemes } from './colors';
 
@@ -346,5 +347,25 @@ Use a query string like ?i=1 (between 0 and 3 inclusive) to choose alternate col
 			tabBarIndex: 2,
 		},
 		handler: setCSSFromFile,
+	},
+	json_file: {
+		domain: 'input_text',
+		default: '',
+		name: 'Json Path/URL',
+		description: `Path/URL to a JSON file to load and harmonize custom colors from.`,
+		init: {
+			config: {
+				icon: 'mdi:code-json',
+				min: 0,
+				max: 255,
+			},
+		},
+		card: {
+			config: {
+				text: {},
+			},
+			tabBarIndex: 2,
+		},
+		handler: setCustomColorsFromJson,
 	},
 };

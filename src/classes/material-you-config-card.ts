@@ -527,6 +527,7 @@ export class MaterialYouConfigCard extends LitElement {
 			'base_color',
 			'card_type',
 			'css_file',
+			'json_file',
 		];
 		for (const field of fields) {
 			inputs[field].handler({

@@ -10,18 +10,19 @@ import {
 	querySelectorAsync,
 } from './utils/async';
 import {
-	hideAppbar,
-	hideNavbar,
 	hideNavbarLabels,
-	setBaseColorFromImage,
-	setCardType,
-	setCSSFromFile,
 	setExplicitStyles,
-	setStyles,
-	setTheme,
 	showAppbarTitle,
 } from './utils/handlers';
 import { hideNavrailLabels } from './utils/handlers/navrailLabels';
+import { hideAppbar } from './utils/handlers/appbar';
+import { setCardType } from './utils/handlers/cards';
+import { setCSSFromFile } from './utils/handlers/css';
+import { setBaseColorFromImage } from './utils/handlers/image';
+import { setCustomColorsFromJson } from './utils/handlers/json';
+import { hideNavbar } from './utils/handlers/navbar';
+import { setStyles } from './utils/handlers/styles';
+import { setTheme } from './utils/handlers/theme';
 import { mdLog } from './utils/logging';
 import { setupSubscriptions } from './utils/subscriptions';
 
@@ -93,6 +94,7 @@ async function main() {
 						setTheme,
 						setCardType,
 						setCSSFromFile,
+						setCustomColorsFromJson,
 						hideAppbar,
 						showAppbarTitle,
 						hideNavbar,

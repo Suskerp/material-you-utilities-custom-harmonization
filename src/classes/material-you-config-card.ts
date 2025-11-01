@@ -13,6 +13,7 @@ import {
 	setCSSFromFile,
 	setTheme,
 } from '../utils/handlers';
+import { setCustomColorsFromJson } from '../utils/handlers/json';
 import { showToast } from '../utils/logging';
 import {
 	buildAlertBox,
@@ -548,6 +549,7 @@ export class MaterialYouConfigCard extends LitElement {
 			setTheme,
 			setCardType,
 			setCSSFromFile,
+			setCustomColorsFromJson,
 		];
 		for (const handler of handlers) {
 			handler(args);

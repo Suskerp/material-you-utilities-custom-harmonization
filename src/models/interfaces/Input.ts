@@ -19,7 +19,8 @@ export type InputField =
 	| 'navrail_labels'
 	| 'harmonize'
 	| 'image_url'
-	| 'css_file';
+	| 'css_file'
+	| 'json_file';
 
 export interface IHandlerArguments {
 	targets?: HTMLElement[];

@@ -9,7 +9,8 @@
 		"build": "npx rspack && gzip -fk dist/material-you-utilities.min.js",
 		"prelint": "tsc --noemit",
 		"lint": "eslint --fix --config ./eslint.config.js",
-		"setup": "git config --add core.hooksPath githooks && chmod +x githooks/pre-commit && npm i"
+		"setup": "git config --add core.hooksPath githooks && chmod +x githooks/pre-commit && npm i",
+		"release:fork": "node scripts/release-fork.mjs"
 	},
 	"lint-staged": {
 		"*": "prettier -w"
